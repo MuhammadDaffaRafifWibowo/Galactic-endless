@@ -27,7 +27,7 @@ alternative command:
 python main.py
 ```
 ## UML Diagram
--Coming Soon-
+![alt text](http://url/to/img.png)
 
 
 ## Contributors
