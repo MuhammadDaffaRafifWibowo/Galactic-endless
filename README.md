@@ -3,8 +3,6 @@ Tubes PBO-Galactic Endless
 
 [How to Play]coming soon
 
-[UML Diagram] coming soon
-
 [Contributors](#contributors)
 
 ## Description
