@@ -27,7 +27,7 @@ alternative command:
 python main.py
 ```
 ## UML Diagram
-![alt text](http://url/to/img.png)
+<img src="/Galactic-endless/to/UML TUBES PBO.drawio(1).jpg" alt="Alt text" title="Optional title">
 
 
 ## Contributors
