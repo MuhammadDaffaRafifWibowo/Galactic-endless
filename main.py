@@ -160,3 +160,75 @@ class ally(object):
 
     def draw(self, window):
         window.blit(self.img, (self.x, self.y))
+
+class bintang(object):
+    def __init__(self):
+        self.img = bintang_img
+        self.width = self.img.get_width()
+        self.height = self.img.get_height()
+        self.spawnPoint = random.choice([(random.randrange(0, screen_width - self.width), random.choice([-1*self.height - 5, screen_height + 5])), (random.choice([-1 * self.width - 5, screen_width + 5]), random.randrange(0, screen_height-self.height))])
+        self.x, self.y = self.spawnPoint
+
+        if self.x < screen_width//2:
+            self.xdir = 1
+        else:
+            self.xdir = -1
+        if self.y < screen_height//2:
+            self.ydir = 1
+        else:
+            self.ydir = -1
+
+        self.xv = self.xdir * 2
+        self.yv = self.ydir * 2
+    
+    def draw(self, window):
+        window.blit(self.img, (self.x, self.y))
+
+        
+
+def redrawGamewindow():
+    window.blit(background, (0,0))
+    #Menambah teks untuk menampilkan nyawa pemain
+    font = pygame.font.SysFont('arial', 30)
+    nyawaTeks = font.render('Nyawa: ' + str(nyawa), 5, (255, 255, 255))
+    replayTeks = font.render('Tekan Spasi untuk Bermain Kembali', 1, (255, 255, 255))
+    scoreTeks = font.render('Skor: ' + str(score), 1, (255, 255, 255))
+    #penempatan posisi teks nyawa
+    window.blit(nyawaTeks, (25, 25))
+    window.blit(scoreTeks, (screen_width - scoreTeks.get_width() - 25, 25))
+    #menampikan teks bermain kembali apabila gameover
+    if Gameover:
+        window.blit(replayTeks, (screen_width//2 - replayTeks.get_width()//2, screen_height//2 - replayTeks.get_height()//2))
+    #menampilkan musuh dilayar
+    player.draw(window)
+    for m in musuhlist:
+        m.draw(window)
+    #menampilkan peluru di layar
+    for i in playerPeluru :
+        i.draw(window)
+    #menamplikan ally pada layar
+    for a in allylist:
+        a.draw(window)
+    #menampilkan bintang pada layar
+    for w in bntglist :
+        w.draw(window)
+    
+    if machineGun:
+        pygame.draw.rect(window, (0,0,0), [screen_width//2 -51, 19, 102, 22])
+        pygame.draw.rect(window, (255, 255, 255), [screen_width//2 -50, 20, 100 - 100*(count - mgStart)/500, 20])
+
+    pygame.display.update()
+
+
+player = player()
+playerPeluru = []
+musuhlist = []
+allylist = []
+bntglist = [bintang()]
+count = 0
+mgStart = -1
+
+run = True
+while run :
+    clock.tick(60)
+    count += 1
