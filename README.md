@@ -25,7 +25,7 @@ alternative command:
 python main.py
 ```
 ## UML Diagram
-<img src="UML TUBES PBO.drawio (1).png" alt="Alt text" title="Optional title">
+<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
 
 
 ## Contributors
