@@ -86,3 +86,54 @@ class player(object):
             self.y = screen_height
         elif self.y > screen_height + 50:
             self.y = 0
+
+class peluru(object):
+    def _init_(self):
+        self.point = player.head
+        self.x, self.y = self.point
+        self.width = 4
+        self.height = 4
+        self.cosin = player.cosin
+        self.sin = player.sin
+        #velocity peluru
+        self.xv = self.cosin * 10
+        self.yv = self.sin * 10
+
+    def move(self):
+        self.x += self.xv
+        self.y -= self.yv
+
+    def draw(self, window):
+        pygame.draw.rect(window, (255, 255, 255), [self.x, self.y, self.width, self.height])
+
+    def batasRenderPeluru(self):
+        if self.x < -50 or self.x > screen_width or self.y > screen_height or self.y < -50:
+            return True
+        
+class musuh(object):
+    def _init_(self, jenis):
+        self.jenis = jenis
+        if self.jenis == 1 :
+            self.img = alien_img
+        elif self.jenis == 2 :
+            self.img = ufo_img
+        
+        self.width = 50 * jenis
+        self.height = 50 * jenis
+        self.spawnPoint = random.choice([(random.randrange(0, screen_width-self.width), random.choice([-1*self.height - 5, screen_height + 5])), (random.choice([-1 * self.width - 5, screen_width + 5]), random.randrange(0, screen_height-self.height))])
+        self.x, self.y = self.spawnPoint
+
+        if self.x < screen_width//2:
+            self.xdir = 1
+        else:
+            self.xdir = -1
+        if self.y < screen_height//2:
+            self.ydir = 1
+        else:
+            self.ydir = -1
+
+        self.xv = self.xdir * random.randrange(1,2)    
+        self.yv = self.ydir * random.randrange(1,2)
+
+    def draw(self, window):
+        window.blit(self.img, (self.x, self.y))
