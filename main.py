@@ -25,7 +25,7 @@ score = 0
 machineGun = False
 
 
-class player(object):
+class player (object):
     def __init__(self):
         self.img = player_img
         self.width = self.img.get_width()
@@ -45,11 +45,11 @@ class player(object):
         self.head = (self.x + self.cosin * self.width//2, self.y - self.sin * self.height//2)
 
 
-    def draw(self, window):
+    def draw (self, window):
         #window.blit(self.img,[self.x, self.y, self.width, self.height])
         window.blit(self.rotasiSurf, self.rotasiRect)
 
-    def putarKiri(self):
+    def putarKiri (self):
         self.sudut += 5 
         self.rotasiSurf = pygame.transform.rotate(self.img, self.sudut)
         self.rotasiRect = self.rotasiSurf.get_rect()
@@ -58,7 +58,7 @@ class player(object):
         self.sin = math.sin(math.radians(self.sudut + 90))
         self.head = (self.x + self.cosin * self.width//2,  self.y - self.sin * self.height//2)
 
-    def putarKanan(self):
+    def putarKanan (self):
         self.sudut -= 5 
         self.rotasiSurf = pygame.transform.rotate(self.img, self.sudut)
         self.rotasiRect = self.rotasiSurf.get_rect()
@@ -67,7 +67,7 @@ class player(object):
         self.sin = math.sin(math.radians(self.sudut + 90))
         self.head = (self.x + self.cosin * self.width//2,  self.y - self.sin * self.height//2)
 
-    def maju(self):
+    def maju (self):
         self.x += self.cosin * 6
         self.y -= self.sin * 6
         self.rotasiSurf = pygame.transform.rotate(self.img, self.sudut)
@@ -77,7 +77,7 @@ class player(object):
         self.sin = math.sin(math.radians(self.sudut + 90))
         self.head = (self.x + self.cosin * self.width//2,  self.y - self.sin * self.height//2)
 
-    def batasRenderPlayer(self):
+    def batasRenderPlayer (self):
         if self.x > screen_width + 50 :
             self.x = 0
         elif self.x < 0 - self.width :
@@ -87,7 +87,7 @@ class player(object):
         elif self.y > screen_height + 50:
             self.y = 0
 
-class peluru(object):
+class peluru (object):
     def _init_(self):
         self.point = player.head
         self.x, self.y = self.point
@@ -99,18 +99,18 @@ class peluru(object):
         self.xv = self.cosin * 10
         self.yv = self.sin * 10
 
-    def move(self):
+    def move (self):
         self.x += self.xv
         self.y -= self.yv
 
-    def draw(self, window):
+    def draw (self, window):
         pygame.draw.rect(window, (255, 255, 255), [self.x, self.y, self.width, self.height])
 
-    def batasRenderPeluru(self):
+    def batasRenderPeluru (self):
         if self.x < -50 or self.x > screen_width or self.y > screen_height or self.y < -50:
             return True
         
-class musuh(object):
+class musuh (object):
     def _init_(self, jenis):
         self.jenis = jenis
         if self.jenis == 1 :
@@ -135,10 +135,10 @@ class musuh(object):
         self.xv = self.xdir * random.randrange(1,2)    
         self.yv = self.ydir * random.randrange(1,2)
 
-    def draw(self, window):
+    def draw (self, window):
         window.blit(self.img, (self.x, self.y))
 
-class ally(object):
+class ally (object):
     def __init__(self):
         self.img = ally_img
         self.width = self.img.get_width()
@@ -158,10 +158,10 @@ class ally(object):
         self.xv = self.xdir * random.randrange(1,2)    
         self.yv = self.ydir * random.randrange(1,2)
 
-    def draw(self, window):
+    def draw (self, window):
         window.blit(self.img, (self.x, self.y))
 
-class bintang(object):
+class bintang (object):
     def __init__(self):
         self.img = bintang_img
         self.width = self.img.get_width()
@@ -181,7 +181,7 @@ class bintang(object):
         self.xv = self.xdir * 2
         self.yv = self.ydir * 2
     
-    def draw(self, window):
+    def draw (self, window):
         window.blit(self.img, (self.x, self.y))
 
         
