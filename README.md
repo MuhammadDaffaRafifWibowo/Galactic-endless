@@ -26,6 +26,20 @@ python main.py
 <li> Download file and ekstrak </li>
 <img src="Download file.jpeg" alt="Alt text" title="Optional title">
 
+<li> Open file "game.py" and run it. </li>
+
+<p>For Windows</p>
+
+```bash
+python game.py
+```
+
+<p>For Mac</p>
+
+```bash
+python3 game.py
+```
+
 ## UML Diagram
 <img src="UML-Diagram.png" alt="Alt text" title="Optional title">
 
