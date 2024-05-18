@@ -1,13 +1,12 @@
 # Galactic-endless
 Tubes PBO-Galactic Endless
 
-[How to Play]coming soon
-
 [Contributors](#contributors)
 
 ## Description
 Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa dimana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain mempunyai tujuan sederhana, yakni bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar tidak secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.
 
+## Cara menjalankan App
 
 ## Library
 - Pygame
