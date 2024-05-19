@@ -11,7 +11,7 @@ Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa 
 - Math
 - Sys
 
-## How to Play
+## How to Run
 <li> Install Python 3.6 or higher</li>
 Run the following command to start the game:
 
