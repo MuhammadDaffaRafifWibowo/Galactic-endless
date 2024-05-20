@@ -26,7 +26,7 @@ python main.py
 <li> Download file and ekstrak </li>
 <img src="Download file.jpeg" alt="Alt text" title="Optional title">
 
-<li> Open file "game.py" and run it. </li>
+<li> Open file "main.py" and run it. </li>
 
 <p>For Windows</p>
 
