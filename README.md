@@ -43,15 +43,15 @@ python3 main.py
 
 1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
 
-<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+<img src="Mainmenu.jpeg" alt="Alt text" title="Optional title">
 
 2. Pilih dukun untuk membantu anda membasmi para demit.
 
-<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+<img src="Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
 3. Ini adalah tampilan dari game. Tugas anda untuk menghalang para demit mencapai pendopo anda.
 
-<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+<img src="Game selesai.jpeg" alt="Alt text" title="Optional title">
 
 
 ## UML Diagram
