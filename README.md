@@ -43,18 +43,18 @@ python3 main.py
 
 1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
 
-<img src="Mainmenu.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Mainmenu.jpeg" alt="Alt text" title="Optional title">
 
 2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga nyawa
 
-<img src="Game berjalan.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
 3. Ini adalah tampilan dari game bila sudah selesai. Tekan tab untuk bermain kembali
-<img src="Game selesai.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Game selesai.jpeg" alt="Alt text" title="Optional title">
 
 
 ## UML Diagram
-<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+<img src="Assets/README/UML-Diagram.png" alt="Alt text" title="Optional title">
 
 
 ## Contributors
