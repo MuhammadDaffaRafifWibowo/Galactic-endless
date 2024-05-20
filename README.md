@@ -50,7 +50,7 @@ python3 main.py
 <img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
 3. Ini adalah tampilan dari game bila sudah selesai. Tekan tab untuk bermain kembali
-<img src="Assets/README/Game selesai.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Game selesai.jpg" alt="Alt text" title="Optional title">
 
 
 ## UML Diagram
