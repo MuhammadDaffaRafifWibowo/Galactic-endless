@@ -17,7 +17,12 @@ class Game:
         #background yang digunakan
         self.background = pygame.image.load('Assets/Map/7.png')
 
-        # Asset suara yang digunakan
+        #Background music
+        pygame.mixer.music.load("Assets/Sound/Space Sprinkles.mp3")
+        pygame.mixer.music.set_volume(0.5) 
+        pygame.mixer.music.play(-1) 
+
+        # Asset sound effect yang digunakan
         self.shoot = pygame.mixer.Sound("Assets/Sound/SHOOT011.mp3")
         self.shoot.set_volume(.25)
         self.explosion = pygame.mixer.Sound("Assets/Sound/SFX_Explosion_02.mp3")
