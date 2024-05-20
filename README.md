@@ -45,12 +45,11 @@ python3 main.py
 
 <img src="Mainmenu.jpeg" alt="Alt text" title="Optional title">
 
-2. Pilih dukun untuk membantu anda membasmi para demit.
+2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga nyawa
 
 <img src="Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
-3. Ini adalah tampilan dari game. Tugas anda untuk menghalang para demit mencapai pendopo anda.
-
+3. Ini adalah tampilan dari game bila sudah selesai. Tekan tab untuk bermain kembali
 <img src="Game selesai.jpeg" alt="Alt text" title="Optional title">
 
 
