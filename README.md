@@ -39,6 +39,20 @@ python main.py
 ```bash
 python3 main.py
 ```
+## How to Run
+
+1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
+
+<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+
+2. Pilih dukun untuk membantu anda membasmi para demit.
+
+<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+
+3. Ini adalah tampilan dari game. Tugas anda untuk menghalang para demit mencapai pendopo anda.
+
+<img src="UML-Diagram.png" alt="Alt text" title="Optional title">
+
 
 ## UML Diagram
 <img src="UML-Diagram.png" alt="Alt text" title="Optional title">
