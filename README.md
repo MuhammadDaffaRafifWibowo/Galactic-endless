@@ -39,7 +39,7 @@ python main.py
 ```bash
 python3 main.py
 ```
-## How to Run
+## How to Play
 
 1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
 
