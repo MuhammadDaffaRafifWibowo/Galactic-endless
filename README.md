@@ -31,13 +31,13 @@ python main.py
 <p>For Windows</p>
 
 ```bash
-python game.py
+python main.py
 ```
 
 <p>For Mac</p>
 
 ```bash
-python3 game.py
+python3 main.py
 ```
 
 ## UML Diagram
