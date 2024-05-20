@@ -115,8 +115,8 @@ class Game:
         self.highScoreTeks = self.font.render('Skor Tertinggi: ' + str(self.highScore), 1, (255, 255, 255))
         # Penempatan posisi teks nyawa
         self.window.blit(self.nyawaTeks, (25, 25))
-        self.window.blit(self.scoreTeks, (self.screen_width - self.scoreTeks.get_width() - 25, 25))
-        self.window.blit(self.highScoreTeks, (self.screen_width - self.highScoreTeks.get_width() - 25, 25 + self.scoreTeks.get_height()))
+        self.window.blit(self.scoreTeks, (self.screen_width - self.scoreTeks.get_width(), 25))
+        self.window.blit(self.highScoreTeks, (self.screen_width - self.highScoreTeks.get_width(), 25 + self.scoreTeks.get_height()))
         # Menampilkan teks bermain kembali apabila gameover
         if self.Gameover:
             self.window.blit(self.replayTeks, (self.screen_width // 2 - self.replayTeks.get_width() // 2, self.screen_height // 2 - self.replayTeks.get_height() // 2))
