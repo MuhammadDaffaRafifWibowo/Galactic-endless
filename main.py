@@ -19,20 +19,20 @@ class MainMenu:
         pygame.display.set_caption("Menu")
         self.bg = pygame.image.load("Assets/mainmenu/mainmenubg.jpg")
         self.clock = pygame.time.Clock()
-        self.background_music = pygame.mixer.Sound("Assets/Sound/ObservingTheStar.ogg")  # Load background music
-        self.background_music.set_volume(0.7)  # Set the volume
+        self.background_music = pygame.mixer.Sound("Assets/Sound/ObservingTheStar.ogg")  
+        self.background_music.set_volume(0.7)  
 
-    def get_font(self, size):  # Returns Press-Start-2P in the desired size
+    def get_font(self, size):  
         return pygame.font.Font("Assets/mainmenu/font.ttf", size)
 
     def play_background_music(self):
-        self.background_music.play(-1)  # Play the background music indefinitely (-1)
+        self.background_music.play(-1)  
 
     def stop_background_music(self):
-        self.background_music.stop()  # Stop the background music
+        self.background_music.stop() 
 
     def main_menu(self):
-        self.play_background_music()  # Start playing background music
+        self.play_background_music() 
         while True:
             self.screen.blit(self.bg, (0, 0))
             menu_mouse_pos = pygame.mouse.get_pos()
@@ -53,15 +53,15 @@ class MainMenu:
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    self.stop_background_music()  # Stop background music before quitting
+                    self.stop_background_music() 
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if play_button.checkForInput(menu_mouse_pos):
-                        self.stop_background_music()  # Stop background music before starting the game
+                        self.stop_background_music()  
                         self.game.start()
                     if quit_button.checkForInput(menu_mouse_pos):
-                        self.stop_background_music()  # Stop background music before quitting
+                        self.stop_background_music() 
                         pygame.quit()
                         sys.exit()
 
