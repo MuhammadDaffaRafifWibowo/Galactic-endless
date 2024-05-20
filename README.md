@@ -24,7 +24,7 @@ alternative command:
 python main.py
 ```
 <li> Download file and ekstrak </li>
-<img src="Download file.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Download file.jpeg" alt="Alt text" title="Optional title">
 
 <li> Open file "main.py" and run it. </li>
 
