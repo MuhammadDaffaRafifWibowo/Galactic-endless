@@ -2,7 +2,7 @@ import pygame
 import random
 from player import player
 from peluru import peluru
-from musuh import musuh
+from musuh import Ufo, MegaUfo
 from ally import ally 
 from bintang import bintang
 
@@ -14,19 +14,19 @@ class Game:
         self.screen_width = width
         self.screen_height = height
 
-        #background yang digunakan
-        self.background = pygame.image.load('Assets/Map/map.png')
+        # Background yang digunakan
+        self.background = pygame.image.load('Assets/Map/7.png')
 
-        #Background music
-        pygame.mixer.music.load("Assets/Sound/Space Sprinkles.mp3")
-        pygame.mixer.music.set_volume(0.5) 
-        pygame.mixer.music.play(-1) 
-
-        # Asset sound effect yang digunakan
+        # Asset sound effect yang digunakan 
         self.shoot = pygame.mixer.Sound("Assets/Sound/SHOOT011.mp3")
         self.shoot.set_volume(.25)
         self.explosion = pygame.mixer.Sound("Assets/Sound/SFX_Explosion_02.mp3")
         self.explosion.set_volume(.25)
+
+        # Background music
+        pygame.mixer.music.load("Assets/Sound/Space Sprinkles.mp3")
+        pygame.mixer.music.set_volume(0.5)
+        pygame.mixer.music.play(-1)
 
         # Display judul game
         pygame.display.set_caption('Galactic Endless')
@@ -78,7 +78,7 @@ class Game:
         # Menampilkan bintang di layar
         for w in self.bntglist:
             w.draw(self.window)
-        
+
         if self.machineGun:
             pygame.draw.rect(self.window, (0, 0, 0), [self.screen_width // 2 - 51, 19, 102, 22])
             pygame.draw.rect(self.window, (255, 255, 255), [self.screen_width // 2 - 50, 20, 100 - 100 * (self.count - self.mgStart) / 500, 20])
@@ -94,7 +94,10 @@ class Game:
             if not self.Gameover:
                 if self.count % 75 == 0:
                     ran = random.choice([1, 1, 1, 2])
-                    self.musuhlist.append(musuh(ran))
+                    if ran == 1:
+                        self.musuhlist.append(Ufo())
+                    else:
+                        self.musuhlist.append(MegaUfo())
 
                 if self.count % 150 == 0:
                     self.allylist.append(ally())
@@ -115,7 +118,7 @@ class Game:
 
                     # Mengecek apakah musuh menabrak player
                     if (player.x >= m.x and player.x <= m.x + m.width) or (player.x + player.width >= m.x and player.x + player.width <= m.x + m.width):
-                        if (player.y > m.y and player.y <= m.y + m.height) or (player.y + player.height >= m.y and player.y + player.height <= m.y + m.height):
+                        if (player.y > m.y and player.y <= m.y + m.height) or (player.y + player.height >= m.y and player.y + m.height <= m.y + m.height):
                             self.explosion.play()
                             self.nyawa -= 1
                             self.musuhlist.pop(self.musuhlist.index(m))
@@ -128,8 +131,8 @@ class Game:
                                 if m.jenis == 2:
                                     self.explosion.play()
                                     self.score += 30
-                                    nm1 = musuh(1)
-                                    nm2 = musuh(1)
+                                    nm1 = Ufo()
+                                    nm2 = Ufo()
                                     nm1.x = m.x
                                     nm2.x = m.x
                                     nm1.y = m.y
@@ -149,7 +152,7 @@ class Game:
                     a.y += a.yv
 
                     if (player.x >= a.x and player.x <= a.x + a.width) or (player.x + player.width >= a.x and player.x + player.width <= a.x + a.width):
-                        if (player.y > a.y and player.y <= a.y + a.height) or (player.y + player.height >= a.y and player.y + player.height <= a.y + a.height):
+                        if (player.y > a.y and player.y <= a.y + a.height) or (player.y + player.height >= a.y and player.y + a.height <= a.y + a.height):
                             self.explosion.play()
                             self.nyawa -= 1
                             if self.score >= 15:
@@ -175,7 +178,7 @@ class Game:
                     w.x += w.xv
                     w.y += w.yv
                     if (player.x >= w.x and player.x <= w.x + w.width) or (player.x + player.width >= w.x and player.x + player.width <= w.x + w.width):
-                        if (player.y > w.y and player.y <= w.y + w.height) or (player.y + player.height >= w.y and player.y + player.height <= w.y + w.height):
+                        if (player.y > w.y and player.y <= w.y + w.height) or (player.y + player.height >= w.y and player.y + w.height <= w.y + w.height):
                             self.bntglist.pop(self.bntglist.index(w))
                             break
                     for p in self.playerPeluru:
@@ -186,7 +189,7 @@ class Game:
                                 self.bntglist.pop(self.bntglist.index(w))
                                 self.playerPeluru.pop(self.playerPeluru.index(p))
                                 break
-                                
+
                 if self.nyawa <= 0:
                     self.Gameover = True
 
