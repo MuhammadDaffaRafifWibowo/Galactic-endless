@@ -15,7 +15,7 @@ class Game:
         self.screen_height = height
 
         # Background yang digunakan
-        self.background = pygame.image.load('Assets/Map/7.png')
+        self.background = pygame.image.load('Assets/Map/map.png')
 
         # Asset sound effect yang digunakan 
         self.shoot = pygame.mixer.Sound("Assets/Sound/SHOOT011.mp3")
