@@ -15,7 +15,7 @@ class Game:
         self.screen_height = height
 
         #background yang digunakan
-        self.background = pygame.image.load('Assets/Map/7.png')
+        self.background = pygame.image.load('Assets/Map/map.png')
 
         #Background music
         pygame.mixer.music.load("Assets/Sound/Space Sprinkles.mp3")
