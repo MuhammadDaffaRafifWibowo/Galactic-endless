@@ -5,7 +5,7 @@ import math
 screen_width = 1200
 screen_height = 800
 
-class ally(object):
+class ally (object):
     def __init__(self):
         self.img = pygame.image.load('Assets/Player/ally.png')
         self.width = self.img.get_width()
@@ -31,7 +31,7 @@ class ally(object):
         # Hitung sudut rotasi
         self.angle = math.degrees(math.atan2(self.xv, -self.yv))
 
-    def draw(self, window):
+    def draw (self, window):
         # Rotasi gambar sesuai dengan sudut yang dihitung
         rotated_img = pygame.transform.rotate(self.img, -self.angle)
         new_rect = rotated_img.get_rect(center=self.img.get_rect(topleft=(self.x, self.y)).center)
