@@ -74,7 +74,31 @@ class MainMenu:
             self.clock.tick(60)
 
     def show_credit(self):
-        credit_text = self.get_font(36).render("Galactic Endless adalah permainan sederhana dengan tema perang antariksa di mana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain memiliki tujuan sederhana: bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah, sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.", True, "#FFFFFF")
+           while True:
+                menu_mouse_pos = pygame.mouse.get_pos()
+
+                self.screen.blit(self.bg, (0, 0))
+
+                menu_text = self.get_font(36).render("Galactic Endless adalah permainan sederhana dengan tema perang antariksa di mana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain memiliki tujuan sederhana: bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah, sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.", True, "White")
+                CREDIT_RECT = menu_text.get_rect(center=(640, 260))
+                self.screen.blit(menu_text, CREDIT_RECT)
+
+                CREDIT_BACK = Button(image=None, pos=(640, 460), 
+                                    text_input="BACK", font=self.get_font(75), base_color="White", hovering_color="Green")
+
+                CREDIT_BACK.changeColor(menu_mouse_pos)
+                CREDIT_BACK.update(self.screen)
+
+                events = pygame.event.get()
+                for event in events:
+                    if event.type == pygame.QUIT:
+                        pygame.quit()
+                        sys.exit()
+                    if event.type == pygame.MOUSEBUTTONDOWN:
+                        if CREDIT_BACK.checkForInput(menu_mouse_pos):
+                            return  # Keluar dari fungsi
+                        
+                pygame.display.update()
 
 
 class Game:
