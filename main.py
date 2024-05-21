@@ -79,7 +79,14 @@ class MainMenu:
 
                 self.screen.blit(self.bg, (0, 0))
 
-                menu_text = self.get_font(36).render("Galactic Endless adalah permainan sederhana dengan tema perang antariksa di mana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain memiliki tujuan sederhana: bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah, sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.", True, "White")
+                menu_text = self.get_font(36).render (
+                    "1. Nur Afni Daem Miarti",
+                    "2. Muhammad Daffa Rafif Wibowo",
+                    "3. Faris Pratama",
+                    "4. Rafelina Octa Ladelavia",
+                    "5. Adin Adry Tjindarbumi",
+                    "6. Nasywa Talitha Heryanna"
+                )
                 CREDIT_RECT = menu_text.get_rect(center=(640, 260))
                 self.screen.blit(menu_text, CREDIT_RECT)
 
