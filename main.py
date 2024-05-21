@@ -19,49 +19,50 @@ class MainMenu:
         pygame.display.set_caption("Menu")
         self.bg = pygame.image.load("Assets/mainmenu/mainmenubg.jpg")
         self.clock = pygame.time.Clock()
-        self.background_music = pygame.mixer.Sound("Assets/Sound/ObservingTheStar.ogg")  
-        self.background_music.set_volume(0.7)  
+        self.background_music = pygame.mixer.Sound("Assets/Sound/ObservingTheStar.ogg")  # Load background music
+        self.background_music.set_volume(0.7)  # Set the volume
 
-    def get_font(self, size):  
+    def get_font(self, size):  # Returns Press-Start-2P in the desired size
         return pygame.font.Font("Assets/mainmenu/font.ttf", size)
 
     def play_background_music(self):
-        self.background_music.play(-1)  
+        self.background_music.play(-1)  # Play the background music indefinitely (-1)
 
     def stop_background_music(self):
-        self.background_music.stop() 
+        self.background_music.stop()  # Stop the background music
 
     def main_menu(self):
-        self.play_background_music() 
+        self.play_background_music()  # Start playing background music
         while True:
             self.screen.blit(self.bg, (0, 0))
             menu_mouse_pos = pygame.mouse.get_pos()
             
-            menu_text = self.get_font(75).render("GALACTIC ENDLESS", True, "#ac02f5")
-            menu_rect = menu_text.get_rect(center=(640, 150))
+            menu_text = self.get_font(78).render("GALACTIC ENDLESS", True, "#0250a3")
+            menu_rect = menu_text.get_rect(center=(640, 170))
 
             play_button = Button(image=pygame.image.load("Assets/mainmenu/Play Rect.png"), pos=(640, 350),
-                                 text_input="PLAY", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
+                                 text_input="PLAY", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
             quit_button = Button(image=pygame.image.load("Assets/mainmenu/Quit Rect.png"), pos=(640, 500),
-                                 text_input="QUIT", font=self.get_font(75), base_color="#d7fcd4", hovering_color="White")
+                                 text_input="QUIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
 
             self.screen.blit(menu_text, menu_rect)
 
             for button in [play_button, quit_button]:
                 button.changeColor(menu_mouse_pos)
+                button.scaleUp(menu_mouse_pos)  # Apply the scale up effect on hover
                 button.update(self.screen)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    self.stop_background_music() 
+                    self.stop_background_music()  # Stop background music before quitting
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if play_button.checkForInput(menu_mouse_pos):
-                        self.stop_background_music()  
+                        self.stop_background_music()  # Stop background music before starting the game
                         self.game.start()
                     if quit_button.checkForInput(menu_mouse_pos):
-                        self.stop_background_music() 
+                        self.stop_background_music()  # Stop background music before quitting
                         pygame.quit()
                         sys.exit()
 
@@ -115,8 +116,8 @@ class Game:
         self.highScoreTeks = self.font.render('Skor Tertinggi: ' + str(self.highScore), 1, (255, 255, 255))
         # Penempatan posisi teks nyawa
         self.window.blit(self.nyawaTeks, (25, 25))
-        self.window.blit(self.scoreTeks, (self.screen_width - self.scoreTeks.get_width(), 25))
-        self.window.blit(self.highScoreTeks, (self.screen_width - self.highScoreTeks.get_width(), 25 + self.scoreTeks.get_height()))
+        self.window.blit(self.scoreTeks, (self.screen_width - self.scoreTeks.get_width() - 25, 25))
+        self.window.blit(self.highScoreTeks, (self.screen_width - self.highScoreTeks.get_width() - 25, 25 + self.scoreTeks.get_height()))
         # Menampilkan teks bermain kembali apabila gameover
         if self.Gameover:
             self.window.blit(self.replayTeks, (self.screen_width // 2 - self.replayTeks.get_width() // 2, self.screen_height // 2 - self.replayTeks.get_height() // 2))
