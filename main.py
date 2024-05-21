@@ -41,11 +41,11 @@ class MainMenu:
             menu_rect = menu_text.get_rect(center=(640, 170))
 
             play_button = Button(image=pygame.image.load("Assets/mainmenu/Play Rect.png"), pos=(640, 350),
-                                text_input="PLAY", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
-            quit_button = Button(image=pygame.image.load("Assets/mainmenu/Quit Rect.png"), pos=(640, 500),
-                                text_input="QUIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
-            credit_button = Button(image=pygame.image.load("Assets/mainmenu/Credit Rect.png"), pos=(640, 425),
-                                text_input="CREDIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
+                                text_input="PLAY", font=self.get_font(60), base_color="#d7fcd4", hovering_color="White")
+            quit_button = Button(image=pygame.image.load("Assets/mainmenu/Quit Rect.png"), pos=(640, 650),
+                                text_input="QUIT", font=self.get_font(60), base_color="#d7fcd4", hovering_color="White")
+            credit_button = Button(image=pygame.image.load("Assets/mainmenu/Credit Rect.png"), pos=(640, 500),
+                                text_input="CREDIT", font=self.get_font(60), base_color="#d7fcd4", hovering_color="White")
 
             self.screen.blit(menu_text, menu_rect)
 
