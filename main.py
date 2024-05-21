@@ -36,18 +36,20 @@ class MainMenu:
         while True:
             self.screen.blit(self.bg, (0, 0))
             menu_mouse_pos = pygame.mouse.get_pos()
-            
+
             menu_text = self.get_font(78).render("GALACTIC ENDLESS", True, "#0250a3")
             menu_rect = menu_text.get_rect(center=(640, 170))
 
             play_button = Button(image=pygame.image.load("Assets/mainmenu/Play Rect.png"), pos=(640, 350),
-                                 text_input="PLAY", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
+                                text_input="PLAY", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
             quit_button = Button(image=pygame.image.load("Assets/mainmenu/Quit Rect.png"), pos=(640, 500),
-                                 text_input="QUIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
+                                text_input="QUIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
+            credit_button = Button(image=pygame.image.load("Assets/mainmenu/Credit Rect.png"), pos=(640, 425),
+                                text_input="CREDIT", font=self.get_font(70), base_color="#d7fcd4", hovering_color="White")
 
             self.screen.blit(menu_text, menu_rect)
 
-            for button in [play_button, quit_button]:
+            for button in [play_button, quit_button, credit_button]:
                 button.changeColor(menu_mouse_pos)
                 button.scaleUp(menu_mouse_pos)  # Apply the scale up effect on hover
                 button.update(self.screen)
@@ -65,9 +67,14 @@ class MainMenu:
                         self.stop_background_music()  # Stop background music before quitting
                         pygame.quit()
                         sys.exit()
+                    if credit_button.checkForInput(menu_mouse_pos):
+                        self.show_credit()
 
             pygame.display.update()
             self.clock.tick(60)
+
+    def show_credit(self):
+        credit_text = self.get_font(36).render("Galactic Endless adalah permainan sederhana dengan tema perang antariksa di mana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain memiliki tujuan sederhana: bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah, sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.", True, "#FFFFFF")
 
 
 class Game:
