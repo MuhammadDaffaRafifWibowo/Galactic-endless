@@ -79,19 +79,24 @@ class MainMenu:
 
                 self.screen.blit(self.bg, (0, 0))
 
-                menu_text = self.get_font(36).render (
+                credits = [
                     "1. Nur Afni Daem Miarti",
                     "2. Muhammad Daffa Rafif Wibowo",
                     "3. Faris Pratama",
                     "4. Rafelina Octa Ladelavia",
                     "5. Adin Adry Tjindarbumi",
                     "6. Nasywa Talitha Heryanna"
-                )
-                CREDIT_RECT = menu_text.get_rect(center=(640, 260))
-                self.screen.blit(menu_text, CREDIT_RECT)
+                ]
 
-                CREDIT_BACK = Button(image=None, pos=(640, 460), 
-                text_input="BACK", font=self.get_font(75), base_color="White", hovering_color="Green")
+                y_offset = 260
+                for credit in credits:
+                    menu_text = self.get_font(36).render(credit, True, (255, 255, 255))
+                    CREDIT_RECT = menu_text.get_rect(center=(640, y_offset))
+                    self.screen.blit(menu_text, CREDIT_RECT)
+                    y_offset += 40  # Adjust the offset for each line
+
+                CREDIT_BACK = Button(image=None, pos=(640, 700), 
+                                    text_input="BACK", font=self.get_font(75), base_color="White", hovering_color="Green")
 
                 CREDIT_BACK.changeColor(menu_mouse_pos)
                 CREDIT_BACK.update(self.screen)
@@ -106,7 +111,6 @@ class MainMenu:
                             return  # Keluar dari fungsi
                         
                 pygame.display.update()
-
 
 class Game:
     def __init__(self, width, height):
