@@ -34,7 +34,7 @@ python3 main.py
 
 1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
 
-<img src="Assets/README/Mainmenu.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/main_menu.jpeg" alt="Alt text" title="Optional title">
 
 2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga nyawa
 
