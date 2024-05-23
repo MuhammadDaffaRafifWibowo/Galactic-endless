@@ -13,28 +13,27 @@ Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa 
 ## How to Run
 <li> Install Python 3.6 or higher</li>
 
-<li> Download file and ekstrak </li>
+<li> Download file dengan format zip, lalu ekstrak file</li>
 <img src="Assets/README/Download file.jpeg" alt="Alt text" title="Optional title">
 
-<li> Open file "main.py" and run it. </li>
+<li> Open file "main.py", kemudian jalankan</li>
 
 <p>For Windows</p>
-
 ```bash
 python main.py
-```
+``
 
 <p>For Mac</p>
-
 ```bash
 python3 main.py
 ```
+
 ## How to Play
 
-1. Ini adalah tampilan dari menu game. Untuk memulai permainan, klik tombol play.
+1. Berikut tampilan dari menu game. Tersedia 3 button, yakni play, credits, dan exit. Untuk memulai permainan, klik tombol play.
 <img src="Assets/README/main_menu.jpg" alt="Alt text" title="Optional title">
 
-2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga buah nyawa.
+2. Berikut merupakan tampilan game yang sedang berjalan. Dengan tiga buah nyawa.
 <img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
 3. Ini adalah tampilan ketika game telah berakhir. Untuk bermain kembali, player dapat menekan tab.
