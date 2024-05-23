@@ -17,13 +17,14 @@ Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa 
 <img src="Assets/README/Download file.jpeg" alt="Alt text" title="Optional title">
 
 <li> Open file "main.py", kemudian jalankan</li>
-
 <p>For Windows</p>
+
 ```bash
 python main.py
 ```
 
 <p>For Mac</p>
+
 ```bash
 python3 main.py
 ```
