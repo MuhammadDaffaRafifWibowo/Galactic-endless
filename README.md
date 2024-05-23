@@ -31,24 +31,19 @@ python3 main.py
 ```
 ## How to Play
 
-1. Ini adalah tampilan dari menu game. Untuk memulai klik tombol play
-
+1. Ini adalah tampilan dari menu game. Untuk memulai permainan, klik tombol play.
 <img src="Assets/README/main_menu.jpg" alt="Alt text" title="Optional title">
 
-2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga nyawa
-
+2. Ini adalah tampilan game yang sedang berjalan. Dengan tiga buah nyawa.
 <img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
-3. Ini adalah tampilan dari game bila sudah selesai. Tekan tab untuk bermain kembali
+3. Ini adalah tampilan ketika game telah berakhir. Untuk bermain kembali, player dapat menekan tab.
 <img src="Assets/README/Game selesai.jpg" alt="Alt text" title="Optional title">
-
 
 ## UML Diagram
 <img src="Assets/README/UML-Diagram.png" alt="Alt text" title="Optional title">
 
-
 ## Contributors
-
 <table>
   <tr>
     <th>Nama</th>
@@ -56,11 +51,11 @@ python3 main.py
   </tr>
   <tr>
     <td>Nur Afni Daem Miarti</td>
-    <td>122140036</td>
+    <td>122140011</td>
   </tr>
   <tr>
     <td>Muhammad Daffa Rafif Wibowo</td>
-    <td>122140011</td>
+    <td>122140036</td>
   </tr>
   <tr>
     <td>Faris Pratama</td>
@@ -72,19 +67,10 @@ python3 main.py
   </tr>
   <tr>
     <td>Adin Adry Tjindarbumi</td>
-    <td>122140026</td>
+    <td>122140024</td>
   </tr>
   <tr>
     <td>Nasywa Talitha Heryanna</td>
     <td>122140046</td>
   </tr>
 </table>
-
-| Nama | NIM | 
-| ---- | --- | 
-1. Nur Afni Daem Miarti (122140011)
-2. Muhammad Daffa Rafif Wibowo (122140036) 
-3. Faris Pratama (122140021)
-4. Rafelina Octa Ladelavia (122140082)
-5. Adin Adry Tjindarbumi (122140024)
-6. Nasywa Talitha Heryanna (122140046)
