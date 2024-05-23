@@ -1,5 +1,4 @@
-# Galactic-endless
-Tubes PBO-Galactic Endless
+# Galactic-Endless
 
 [Contributors](#contributors)
 
@@ -49,6 +48,37 @@ python3 main.py
 
 
 ## Contributors
+
+<table>
+  <tr>
+    <th>Nama</th>
+    <th>NIM</th>
+  </tr>
+  <tr>
+    <td>Nur Afni Daem Miarti</td>
+    <td>122140036</td>
+  </tr>
+  <tr>
+    <td>Muhammad Daffa Rafif Wibowo</td>
+    <td>122140011</td>
+  </tr>
+  <tr>
+    <td>Faris Pratama</td>
+    <td>122140021</td>
+  </tr>
+  <tr>
+    <td>Rafelina Octa Ladelavia</td>
+    <td>122140082</td>
+  </tr>
+  <tr>
+    <td>Adin Adry Tjindarbumi</td>
+    <td>122140026</td>
+  </tr>
+  <tr>
+    <td>Nasywa Talitha Heryanna</td>
+    <td>122140046</td>
+  </tr>
+</table>
 
 | Nama | NIM | 
 | ---- | --- | 
