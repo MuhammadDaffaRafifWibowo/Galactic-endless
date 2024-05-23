@@ -1,5 +1,11 @@
 # Galactic-Endless
 
+## Table of Contents
+[Descriptions](#description)
+[Library](#library)
+[How to Run](#howtorun)
+[How to Play](#howtoplay)
+[UML Diagram](#umldiagram)
 [Contributors](#contributors)
 
 ## Description
@@ -30,7 +36,6 @@ python3 main.py
 ```
 
 ## How to Play
-
 1. Berikut tampilan dari menu game. Tersedia 3 button, yakni play, credits, dan exit. Untuk memulai permainan, klik tombol play.
 <img src="Assets/README/main_menu.jpg" alt="Alt text" title="Optional title">
 
