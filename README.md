@@ -1,12 +1,13 @@
 # Galactic-Endless
 
 ## Table of Contents
-- [Descriptions](#description)
+- [Description](#description)
 - [Library](#library)
-- [How to Run](#howtorun)
-- [How to Play](#howtoplay)
-- [UML Diagram](#umldiagram)
+- [How to Run](#how-to-run)
+- [How to Play](#how-to-play)
+- [UML Diagram](#uml-diagram)
 - [Contributors](#contributors)
+- [Reference](#reference)
 
 ## Description
 Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa dimana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain mempunyai tujuan sederhana, yakni bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar tidak secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.
@@ -79,3 +80,9 @@ python3 main.py
     <td>122140046</td>
   </tr>
 </table>
+
+## Reference
+- [Main Menu](https://youtu.be/GMBqjxcKogA?si=vV2MWWq2jAYe9HZG)
+- [Game](https://youtube.com/playlist?list=PLlEgNdBJEO-muprNCDYiKLZ-Kc3-p8thS&si=geoQv1_xK-M-Y5Nd)
+- [Sound FX](https://opengameart.org/)
+- [Aset Gambar](canva.com)
