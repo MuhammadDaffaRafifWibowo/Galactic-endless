@@ -85,4 +85,4 @@ python3 main.py
 - [Main Menu](https://youtu.be/GMBqjxcKogA?si=vV2MWWq2jAYe9HZG)
 - [Game](https://youtube.com/playlist?list=PLlEgNdBJEO-muprNCDYiKLZ-Kc3-p8thS&si=geoQv1_xK-M-Y5Nd)
 - [Sound FX](https://opengameart.org/)
-- [Aset Gambar](canva.com)
+- [Aset Gambar](https://canva.com)
