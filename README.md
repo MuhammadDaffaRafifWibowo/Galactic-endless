@@ -55,7 +55,8 @@ python3 main.py
 <img src="Assets/README/UML-Diagram.png" alt="Alt text" title="Optional title">
 
 ## Demo Video
-[Demo Video Galactic Endless](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
+[Demo Video Galactic Endless Gdrive](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
+[Demo Video Galactic Endless YouTube](https://youtu.be/wUO42uOeYMo)
 
 ## Contributors
 <table>
