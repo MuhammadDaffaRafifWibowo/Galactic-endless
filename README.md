@@ -6,9 +6,9 @@
 - [How to Run](#how-to-run)
 - [How to Play](#how-to-play)
 - [UML Diagram](#uml-diagram)
+- [Demo Video Galactic Endless](#demo-video)
 - [Contributors](#contributors)
 - [Reference](#reference)
-- [Video Galactic Endless](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
 
 ## Description
 Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa dimana pemain bertugas sebagai pilot pesawat ruang angkasa yang harus melindungi galaksi dari invasi musuh. Pemain mempunyai tujuan sederhana, yakni bertahan selama mungkin dan mencapai skor tertinggi. Namun, pemain harus menghindari serangan musuh yang datang dari berbagai arah sambil mengatur tembakan untuk menghancurkan kapal-kapal musuh seefisien mungkin. Di samping itu, pemain juga harus berhati-hati agar tidak secara tidak sengaja merusak kapal-kapal sekutu, karena ini akan mengurangi skor dan kemungkinan mengakhiri permainan.
@@ -25,7 +25,7 @@ Galactic Endless adalah sebuah permainan sederhana dengan tema perang antariksa 
 <li> Download file dengan format zip, lalu ekstrak file</li>
 <img src="Assets/README/Download file.jpeg" alt="Alt text" title="Optional title">
 
-<li> Open file "main.py", kemudian jalankan</li>
+<li> Open file "main.py", kemudian jalankan.</li>
 <p>For Windows</p>
 
 ```bash
@@ -39,20 +39,23 @@ python3 main.py
 ```
 
 ## How to Play
-1. Berikut tampilan dari menu game. Tersedia 3 button, yakni play, credits, dan exit. Untuk memulai permainan, klik tombol play.
+- Berikut tampilan dari menu game. Tersedia 3 button, yakni play, credits, dan exit. Untuk memulai permainan, klik tombol play.
 <img src="Assets/README/main_menu.jpg" alt="Alt text" title="Optional title">
 
-2. Berikut tampilan dari credit. Terdapat nama para kontributor.
+- Berikut merupakan tampilan ketika credits di-klik. Menampilkan nama-nama kontributor yang mengembangkan game Galactic Endless.
 <img src="Assets/README/Credit.jpeg" alt="Alt text" title="Optional title">
 
-2. Berikut merupakan tampilan game yang sedang berjalan. Dengan tiga buah nyawa.
+- Berikut merupakan tampilan game yang sedang berjalan. Dengan keterangan nyawa pada pojok kiri atas, skor saat bermain, serta skor tertinggi pada pojok kanan atas.
 <img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
 
-3. Ini adalah tampilan ketika game telah berakhir. Untuk bermain kembali, player dapat menekan tab.
+- Ini adalah tampilan ketika game telah berakhir. Untuk bermain kembali, player dapat menekan tab.
 <img src="Assets/README/Game selesai.jpg" alt="Alt text" title="Optional title">
 
 ## UML Diagram
 <img src="Assets/README/UML-Diagram.png" alt="Alt text" title="Optional title">
+
+## Demo Video
+[Demo Video Galactic Endless](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
 
 ## Contributors
 <table>
