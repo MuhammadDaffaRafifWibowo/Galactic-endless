@@ -56,6 +56,7 @@ python3 main.py
 
 ## Demo Video
 [Demo Video Galactic Endless Gdrive](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
+
 [Demo Video Galactic Endless YouTube](https://youtu.be/wUO42uOeYMo)
 
 ## Contributors
