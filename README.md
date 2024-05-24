@@ -42,7 +42,7 @@ python3 main.py
 <img src="Assets/README/main_menu.jpg" alt="Alt text" title="Optional title">
 
 2. Berikut tampilan dari credit. Terdapat nama para kontributor.
-<img src="Assets/README/credit.jpeg" alt="Alt text" title="Optional title">
+<img src="Assets/README/Credit.jpeg" alt="Alt text" title="Optional title">
 
 2. Berikut merupakan tampilan game yang sedang berjalan. Dengan tiga buah nyawa.
 <img src="Assets/README/Game berjalan.jpeg" alt="Alt text" title="Optional title">
