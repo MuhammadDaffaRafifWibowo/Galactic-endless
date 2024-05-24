@@ -81,7 +81,7 @@ python3 main.py
   </tr>
 </table>
 
-- [https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing](#LinkVideo)
+- [LinkVideo](https://drive.google.com/file/d/1aXzYxojGRQmuKSk2Obf2erv1IV9Rk_al/view?usp=sharing)
 
 ## Reference
 - [Main Menu](https://youtu.be/GMBqjxcKogA?si=vV2MWWq2jAYe9HZG)
